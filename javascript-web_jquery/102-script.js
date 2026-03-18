@@ -1,3 +1,4 @@
+/* global $ */
 $('document').ready(function () {
   const url = 'https://www.fourtonfish.com/hellosalut/?';
   $('input#btn_translate').click(function () {

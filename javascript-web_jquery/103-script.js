@@ -1,3 +1,4 @@
+/* global $ */
 $(document).ready(function () {
   $('#btn_translate, #language_code').on('click keyup', function (e) {
     if (e.type === 'click' || (e.type === 'keyup' && e.keyCode === 13)) {
