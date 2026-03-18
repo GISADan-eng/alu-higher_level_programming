@@ -1,18 +1,8 @@
 #!/usr/bin/node
-const myObject = {
-  type: 'object',
-  value: 12
-};
-
-console.log(myObject);
-
-myObject.incr = function () {
-  this.value++;
-};
-
-myObject.incr();
-console.log(myObject);
-myObject.incr();
-console.log(myObject);
-myObject.incr();
-console.log(myObject);
+const args = process.argv.slice(2).map(Number);
+if (args.length === 0 || args.length === 1) {
+  console.log(0);
+} else {
+  const sorted = args.sort((a, b) => b - a);
+  console.log(sorted[1]);
+}
